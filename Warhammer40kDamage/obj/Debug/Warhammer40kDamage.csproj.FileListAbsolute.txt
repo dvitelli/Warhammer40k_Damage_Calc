@@ -1,0 +1,11 @@
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\bin\Debug\Warhammer40kDamage.exe.config
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\bin\Debug\Warhammer40kDamage.exe
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\bin\Debug\Warhammer40kDamage.pdb
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\obj\Debug\Warhammer40kDamage.csproj.AssemblyReference.cache
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\obj\Debug\Warhammer40kDamage.csproj.SuggestedBindingRedirects.cache
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\obj\Debug\Warhammer40kDamage.Properties.Resources.resources
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\obj\Debug\Warhammer40kDamage.csproj.GenerateResource.cache
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\obj\Debug\Warhammer40kDamage.csproj.CoreCompileInputs.cache
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\obj\Debug\Warhammer40kDamage.exe
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\obj\Debug\Warhammer40kDamage.pdb
+C:\Users\domvi\source\repos\Warhammer40kDamage\Warhammer40kDamage\obj\Debug\Warhammer40kDamage.Form1.resources

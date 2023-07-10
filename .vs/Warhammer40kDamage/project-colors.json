@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "04027afd-fc9c-4089-a702-85071fd52d02": {
+      "ProjectGuid": "04027afd-fc9c-4089-a702-85071fd52d02",
+      "DisplayName": "Warhammer40kDamage",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
