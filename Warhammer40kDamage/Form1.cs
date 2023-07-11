@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 
 
+
+
 namespace Warhammer40kDamage
 {
     public partial class Form1 : Form
@@ -17,20 +19,21 @@ namespace Warhammer40kDamage
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void runCalcButton_Click(object sender, EventArgs e)
         {
+                   
             WeaponObject weapon = new WeaponObject(weaponNameTextBox.Text, weaponTypeComboBox.Text, int.Parse(strengthTextBox.Text), int.Parse(weaponSkillTextBox.Text),
                                                    int.Parse(attacksTextBox.Text), int.Parse(apTextbox.Text), int.Parse(damageTextBox.Text));
 
-            //weapon.printWeapon();
-            weapon.testCalc();
-            
-
+            DummySheets dummySheets = new DummySheets();
+            weapon.testCalc(dummySheets.Setup(enemySheetListBox.Text));
+   
 
         }
 
-       
+        
     }
 }

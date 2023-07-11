@@ -54,6 +54,7 @@
             this.weaponNameTextBox.Name = "weaponNameTextBox";
             this.weaponNameTextBox.Size = new System.Drawing.Size(305, 20);
             this.weaponNameTextBox.TabIndex = 0;
+            this.weaponNameTextBox.Text = "Bolter";
             // 
             // weaponNameLabel
             // 
@@ -85,13 +86,17 @@
             // 
             // weaponTypeComboBox
             // 
+            
             this.weaponTypeComboBox.FormattingEnabled = true;
             this.weaponTypeComboBox.Items.AddRange(new object[] {
-            "Rapid Fire",
             "Assault",
+            "Grenade",
             "Heavy",
+            "Melee",
             "Pistol",
-            "Grenade"});
+            "Psychic",
+            "Rapid Fire"});
+            this.weaponTypeComboBox.SelectedItem = "Assault";
             this.weaponTypeComboBox.Location = new System.Drawing.Point(16, 90);
             this.weaponTypeComboBox.Name = "weaponTypeComboBox";
             this.weaponTypeComboBox.Size = new System.Drawing.Size(301, 21);
@@ -103,6 +108,7 @@
             this.strengthTextBox.Name = "strengthTextBox";
             this.strengthTextBox.Size = new System.Drawing.Size(100, 20);
             this.strengthTextBox.TabIndex = 6;
+            this.strengthTextBox.Text = "4";
             // 
             // strengthLabel
             // 
@@ -128,6 +134,7 @@
             this.weaponSkillTextBox.Name = "weaponSkillTextBox";
             this.weaponSkillTextBox.Size = new System.Drawing.Size(100, 20);
             this.weaponSkillTextBox.TabIndex = 8;
+            this.weaponSkillTextBox.Text = "4";
             // 
             // attacksLabel
             // 
@@ -144,6 +151,7 @@
             this.attacksTextBox.Name = "attacksTextBox";
             this.attacksTextBox.Size = new System.Drawing.Size(100, 20);
             this.attacksTextBox.TabIndex = 10;
+            this.attacksTextBox.Text = "20";
             // 
             // apLabel
             // 
@@ -161,6 +169,7 @@
             this.apTextbox.Name = "apTextbox";
             this.apTextbox.Size = new System.Drawing.Size(100, 20);
             this.apTextbox.TabIndex = 12;
+            this.apTextbox.Text = "0";
             // 
             // damageLabel
             // 
@@ -177,6 +186,7 @@
             this.damageTextBox.Name = "damageTextBox";
             this.damageTextBox.Size = new System.Drawing.Size(100, 20);
             this.damageTextBox.TabIndex = 14;
+            this.damageTextBox.Text = "1";
             // 
             // dataSet1
             // 
@@ -186,7 +196,9 @@
             // 
             this.enemySheetListBox.FormattingEnabled = true;
             this.enemySheetListBox.Items.AddRange(new object[] {
+            "Aberrants",
             "Space Marine"});
+            this.enemySheetListBox.SelectedItem = "Aberrants";
             this.enemySheetListBox.Location = new System.Drawing.Point(144, 142);
             this.enemySheetListBox.Name = "enemySheetListBox";
             this.enemySheetListBox.Size = new System.Drawing.Size(172, 186);
