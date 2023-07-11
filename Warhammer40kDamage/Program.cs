@@ -193,23 +193,19 @@ namespace Warhammer40kDamage
         public void testCalc(SheetDummy dummy)
         {
             int damageDone = 0;
-            int currentRoll = 0;
-
             for (int i = 0; i < 10000; i++)
             {
                 int wounds = Wounds(dummy);
-                currentRoll = ((wounds - AttackSaved(wounds, dummy) * damage));
+                int currentRoll = ((wounds - AttackSaved(wounds, dummy)) * this.damage);
                 damageDone += currentRoll;
 
-                System.Diagnostics.Debug.WriteLine("Damage Calc: " + i + ": " + currentRoll);
+                System.Diagnostics.Debug.WriteLine("Damage Calc " + i + ": " + currentRoll);
 
             }
 
             //System.Diagnostics.Debug.WriteLine("Damage Done: "+damageDone);
 
             DamagePrint(dummy, damageDone);
-
-            damageDone = 0;
 
         }
 
