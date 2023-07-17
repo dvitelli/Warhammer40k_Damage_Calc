@@ -28,7 +28,7 @@ namespace Warhammer40kDamage
             WeaponObject weapon = new WeaponObject(weaponNameTextBox.Text, weaponTypeComboBox.Text, int.Parse(strengthTextBox.Text), int.Parse(weaponSkillTextBox.Text),
                                                    int.Parse(attacksTextBox.Text), int.Parse(apTextbox.Text), int.Parse(damageTextBox.Text));
 
-            DummySheets dummySheets = new DummySheets();
+            DummySheetSetup dummySheets = new DummySheetSetup();
             weapon.testCalc(dummySheets.Setup(enemySheetListBox.Text));
    
 
