@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InputValidation.cs" />
     <Compile Include="DummySheetSetup.cs" />
     <Compile Include="WeaponObject.cs" />
     <Compile Include="SheetDummy.cs" />
