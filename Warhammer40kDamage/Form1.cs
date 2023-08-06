@@ -27,11 +27,11 @@ namespace Warhammer40kDamage
                 InputCheck input = new InputCheck(weaponNameTextBox.Text, strengthTextBox.Text, weaponSkillTextBox.Text,
                     attacksTextBox.Text, apTextbox.Text, damageTextBox.Text, enemySheetListBox.Text);
 
-                //WeaponObject weapon = new WeaponObject(weaponNameTextBox.Text, weaponTypeComboBox.Text, int.Parse(strengthTextBox.Text), int.Parse(weaponSkillTextBox.Text),
-                                                   //int.Parse(attacksTextBox.Text), int.Parse(apTextbox.Text), int.Parse(damageTextBox.Text));
+                WeaponObject weapon = new WeaponObject(weaponNameTextBox.Text, weaponTypeComboBox.Text, int.Parse(strengthTextBox.Text), int.Parse(weaponSkillTextBox.Text),
+                                                   int.Parse(attacksTextBox.Text), int.Parse(apTextbox.Text), int.Parse(damageTextBox.Text));
 
-                //DummySheetSetup dummySheets = new DummySheetSetup();
-                //weapon.testCalc(dummySheets.Setup(enemySheetListBox.Text));
+                DummySheetSetup dummySheets = new DummySheetSetup();
+                weapon.testCalc(dummySheets.Setup(enemySheetListBox.Text));
 
             }
 

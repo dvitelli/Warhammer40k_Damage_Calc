@@ -11,99 +11,109 @@ namespace Warhammer40kDamage
     {
         public InputCheck(string weaponName, string strength, string weaponSkill, string attacks, string ap, string damage, string dummy) {
 
-            if(string.IsNullOrEmpty(weaponName))
-            {
-                throw new Exception("No name entered. Please enter a weapon name.");
-            }
+                WeaponNameCheck(weaponName); //check weapon name
+                StrengthCheck(strength);
+                WeaponSkillCheck(weaponSkill);
+                AttacksCheck(attacks);
+                APCheck(ap);
+                DamageCheck(damage);
+                DummyCheck(dummy);
 
-            if (string.IsNullOrEmpty(strength))
-            {
-                throw new Exception("No value entered for strength. Please enter a value.");
-            }
         }
-        public bool WeaponNameCheck(string weaponName) {
+        public void WeaponNameCheck(string weaponName) {
+
+                if (string.IsNullOrEmpty(weaponName))
+                {
+                    throw new Exception("No name entered. Please enter a weapon name.");
+                }
         
-            if(weaponName == null || weaponName == "")
-            {
-                MessageBox.Show("Please enter the name of the weapon used.", "No Weapon Name",
-                MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-
-            return true;
+            
         }
-        public bool StrengthCheck(int strength) {
+        public void StrengthCheck(string strength) {
+
+            if(string.IsNullOrEmpty(strength))
+            {
+                throw new Exception("No strength was entered. Please enter a strength value.");
+            }
 
             Regex regex = new Regex("^[0-9]+$");
 
-            if(regex.Equals(strength))
+            if (!regex.IsMatch(strength))
             {
-                return true;
+                throw new Exception("Strength has to be a numerical value. Please enter a numerical value for strength.");
             }
 
-            MessageBox.Show("Please enter a number for the strength value.", "Incorrect Strength Amount",
-            MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            return false;
         }
-        public bool WeaponSkillCheck(int weaponSkill) {
+        public void WeaponSkillCheck(string weaponSkill) {
+
+            if (string.IsNullOrEmpty(weaponSkill))
+            {
+                throw new Exception("No weapon skill was entered. Please enter a weapon skill value.");
+            }
 
             Regex regex = new Regex("^[0-9]+$");
 
-            if (regex.Equals(weaponSkill))
+            if (!regex.IsMatch(weaponSkill))
             {
-                return true;
+                throw new Exception("Weapon skill has to be a numerical value. Please enter a numerical value for weapon skill.");
             }
 
-            MessageBox.Show("Please enter a number for the weapon skill value.", "Incorrect Weapon Skill Amount",
-            MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            return false;
         }
-        public bool AttacksCheck(int attacks) {
+        public void AttacksCheck(string attacks) {
+
+            if (string.IsNullOrEmpty(attacks))
+            {
+                throw new Exception("Number of attacks was not entered. Please enter a number of attacks.");
+            }
 
             Regex regex = new Regex("^[0-9]+$");
 
-            if (regex.Equals(attacks))
+            if (!regex.IsMatch(attacks))
             {
-                return true;
+                throw new Exception("Weapon skill has to be a numerical value. Please enter a numerical value for weapon skill");
             }
 
-            MessageBox.Show("Please enter a number for the attacks value.", "Incorrect Attack Amount",
-            MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            return false;
         }
-        public bool APCheck(int ap) {
+        public void APCheck(string ap) {
+
+            if (string.IsNullOrEmpty(ap))
+            {
+                throw new Exception("No ap value was entered. Please enter an ap value.");
+            }
 
             Regex regex = new Regex("^[0-9]+$");
 
-            if (regex.Equals(ap))
+            if (!regex.IsMatch(ap))
             {
-                return true;
+                throw new Exception("AP has to be a numerical value. Please enter a numerical value for ap.");
             }
 
-            MessageBox.Show("Please enter a number for the ap value.", "Incorrect AP Amount",
-            MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            return false;
         }
-        public bool DamageCheck(int damage) {
+        public void DamageCheck(string damage) {
+
+            if (string.IsNullOrEmpty(damage))
+            {
+                throw new Exception("Damage dealt was not entered. Please enter a damage value.");
+            }
+
             Regex regex = new Regex("^[0-9]+$");
 
-            if (regex.Equals(damage))
+            if (!regex.IsMatch(damage))
             {
-                return true;
+                throw new Exception("Damage dealt has to be a numerical value. Please enter a damage value.");
             }
 
-            MessageBox.Show("Please enter a number for the damage value.", "Incorrect Damage Amount",
-            MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            return false;
         }
-        public bool DummyCheck(string dummy) {
+        public void DummyCheck(string dummy) {
 
-            return true;
+            if (string.IsNullOrEmpty(dummy))
+            {
+                throw new Exception("No enemy dummy entered. Please choose a dummy name.");
+            }
+
         }
 
     }
